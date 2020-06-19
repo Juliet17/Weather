@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/good_weather"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editTextTextCity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:backgroundTint="@android:color/white"
+        android:ems="10"
+        android:hint="@string/input_city"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:autofillHints="@android:string/autofill"
+        app:layout_constraintBottom_toTopOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonShowWeather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show_weather"
+        android:layout_margin="32dp"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="normal"
+        android:onClick="onClickShowWeather"
+        android:background="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextCity" />
+
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:paddingTop="32dp"
+        android:paddingStart="24dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/buttonShowWeather"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
