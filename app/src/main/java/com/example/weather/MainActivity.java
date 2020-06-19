@@ -24,7 +24,7 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&appid=8cb06bb57e4769e356c76c0b77f8d88f&lang=en&units=metric";
+    private final String WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?q=%s&appid=TOKEN&lang=en&units=metric";
 
     private EditText editTextCity;
     private Button buttonShowWeather;
